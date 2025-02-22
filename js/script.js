@@ -6,6 +6,6 @@ const img = document.querySelector(".img");
 const getImage = async function () {
     const response = await fetch ("https://picsum.photos/v2/list?limit=100");
     const images = await response.json();
-    console.log(response);
+    console.log(images);
 }
 getImage();
